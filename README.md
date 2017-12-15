@@ -7,7 +7,7 @@ The purpose of this technical challenge is to get a feel for the current skill l
 We would like you to demonstrate your development skills by delivering a solution to a short set of requirements listed below.
 
 - We don't expect you to spend any longer than 2/3 hours on this task.
-- Once you have finished, please send us a link to your zipped code or even better a link to your solution in a hosted Git repository (GitHub / BitBucket etc.).
+- Once you have finished, please send us a link to your zipped code or _even better_ a link to your solution in a hosted Git repository (GitHub / BitBucket etc.).
 - You may also wish to include some handover notes along with your code.
 
 As part of the recruitment process we would like you to discuss your solution, the approach you've taken and any challenges you faced.
@@ -20,33 +20,31 @@ If you have any questions, please get in touch.
 
 ![Company 42 Logo](designs/logo-company-42-for-read-me.png)
 
-Company 42 have contacted Dam Digital to help them finish a prototype their website. They want Dam Digital to help them fixed a number of bugs and to create 2 new blocks in this page.
+Company 42 have contacted Dam Digital to help them finish a prototype for their website. They would like Dam Digital to help fix a number of bugs and to create 2 new blocks.
 
-The website must support the following browsers:
+The website must support the following browsers and be fully responsive on mobile devices:
 
 - Chrome (latest version)
 - Firefox (latest version)
 - Internet Explorer (IE 11+)
-- Android
-- IOS 
 
 ------
 
 ## Designs
-All designs are in the design folder.
+All designs are in the 'designs' folder.
 
 -------
 
 ## Bugs to fix
 
-Some of these bugs are browser specific. In the event you do not have access to the necessary browser (e.g. if you are working on a apple device you won't have access to Internet Explorer) 
+Some of these bugs are browser specific. In the event you do not have access to the necessary browser (e.g. if you are working on an Apple device you won't have access to Internet Explorer) 
 please give us potential solutions to these bugs.
 
-You can find screenshots of the bugs in design/bugs
+You can find screenshots of the bugs at the following path 'design\bugs'
 
 ### Bug 1 - The page is not scaling correctly on mobile or tablet devices
-The whole website looks off on mobile and tablet - everything is really small.
-When resizing the window on desktop everything works fine.
+The whole website is not rendering correctly on mobile and tablet - everything is really small.
+When resizing the window on desktop everything renders correctly.
 The website should look as per the mobile and tablet designs.
 
 ### Bug 2 - Logo does not appear in the header
@@ -57,7 +55,7 @@ The logo should be shown.
 When clicking on the heart icon in any of the cards the colour should change from black to red to indicate to the user that this product has been added to their favorite products.
 
 ### Bug 4 - User should be able to delete cards
-When clicking on the cross icon in the card a modal should appear (as per design) and the user should be able to click on 'delete' to remove this card.
+When clicking on the cross icon in the card a modal should appear (as per design) and the user should be able to click on 'Delete' to remove this card.
 
 ### Bug 5 - Cards should be the same height as per design
 Currently not all cards have the same height. We would like the cards to take the height of the largest one in each row. Not all rows need to be the same height.
