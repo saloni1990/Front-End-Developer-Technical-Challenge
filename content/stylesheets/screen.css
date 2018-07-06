@@ -27,6 +27,7 @@
 /* line 19, ../sass/layout/_card.scss */
 .card .card-description {
   padding: 1rem;
+  height: 22rem;
 }
 /* line 23, ../sass/layout/_card.scss */
 .card .card-controllers {
@@ -46,6 +47,10 @@
 /* line 37, ../sass/layout/_card.scss */
 .card .card-controllers .favorite svg path {
   fill: #000000;
+}
+
+.card .card-controllers .favoriteClicked svg path {
+  fill: red;
 }
 /* line 42, ../sass/layout/_card.scss */
 .card .card-controllers button {
@@ -73,3 +78,92 @@
   padding-right: 4rem;
   padding-top: 2rem;
 }
+
+.logo {
+  width: 100%;
+}
+
+button:focus {
+  outline:0;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+}
+
+p, a {
+  font-weight: 300;
+}
+
+
+h1, h2, h3, label{
+  font-weight: 400;
+}
+/*STAFF BLOCK*/
+.img-rounded.pull-left{
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.img-rounded.pull-right{
+  border-radius: 25px;
+}
+
+.staffBox {
+  display: inline;
+  margin-left: 10px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid black;;
+}
+
+/*NEWSLETTER*/
+.newsletter{
+  background-color: #337ab7;
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+.newsletter h2 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.btn-block {
+  width: 25%;
+  background: #fff;
+  color: black;
+}
+/*MEDIA QUERIES - MOBILE*/
+@media screen 
+  and (max-width: 480px) {
+  .main-navigation {
+        display: none;
+    }
+  .card .card-description {
+    padding: 1rem;
+    height: 15rem;
+}  
+}
+
+
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) {
+  .main-navigation {
+        display: none;
+    }
+  .modal {
+    width: 100%;
+  }
+  .card .card-description {
+    padding: 1rem;
+    height: 15rem;
+  }  
+}
+
+

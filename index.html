@@ -3,39 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>Client Home Page</title>
     <link rel="stylesheet" type="text/css" href="content/stylesheets/vendors/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="content/stylesheets/screen.css">
 </head>
 <body>
+    <!-- MODAL -->
+
+    <div class="container">
+        <div="row">
+            <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <p>Are you sure you want to delete this product?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-danger deleteModal">Delete</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+
     <header class="jumbotron">
+
         <div class="container">
             <div class="text-center">
                 <h1>Welcome to</h1>
                 <div class="row">
                     <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-                        <img class="logo" src="content/images/logo-company-42.svg" alt="company 42 logo">
+                        <img class="logo" src="designs/logo-company-42-for-read-me.png" alt="company 42 logo">
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
+
     <div class="container">
         <div class="content">
             <nav class="main-navigation">
                 <ul class="nav nav-pills nav-stacked sticky">
-                    <li role="presentation"><a href="#">Products</a></li>
-                    <li role="presentation"><a href="#">Staff</a></li>
-                    <li role="presentation"><a href="#">Register</a></li>
+                    <li role="presentation"><a href="#product">Products</a></li>
+                    <li role="presentation"><a href="#staff">Staff</a></li>
+                    <li role="presentation"><a href="#register">Register</a></li>
                 </ul>
             </nav>
 
             <main class="main-content">
-                <h2>Products</h2>
+
+                <!-- PRODUCTS -->
+                <h2 id="product">Products</h2>
                 <div class="row">
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x450" alt="product image description">
@@ -53,12 +87,12 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x600" alt="product image description">
@@ -76,12 +110,12 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x620" alt="product image description">
@@ -99,12 +133,12 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x307" alt="product image description">
@@ -122,12 +156,12 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x506" alt="product image description">
@@ -145,12 +179,12 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x805" alt="product image description">
@@ -168,12 +202,12 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x804" alt="product image description">
@@ -191,12 +225,12 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x803" alt="product image description">
@@ -214,12 +248,12 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="card">
                             <div class="card-img">
                                 <img class="img-responsive" src="https://source.unsplash.com/500x802" alt="product image description">
@@ -237,14 +271,97 @@
                                         c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                                     </svg>
                                 </button>
-                                <button class="delete"><span>&times;</span></button>
+                                <button class="delete" data-toggle="modal" data-target="#myModal"><span>&times;</span></button>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <!-- STAFF -->
+                <h2 id="staff">Staff</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="staffBox">
+
+                            <img class="img-rounded pull-left" src="https://source.unsplash.com/250x250" alt="product image description">
+                             <h3>Joe Doe</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rationis enim perfectio est virtus; De hominibus dici non necesse est.</p>
+                        </div>  
+                        
+                    </div>
+
+                    <div class="row">
+                        <hr>     
+                        <div class="staffBox">
+
+                            <img class="img-rounded pull-right" src="https://source.unsplash.com/250x250" alt="product image description">
+                             <h3>Joe Doe</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rationis enim perfectio est virtus; De hominibus dici non necesse est.</p>
+                        </div>  
+                      
+                    </div>
+
+                    <div class="row">
+                    <hr>
+                        <div class="staffBox">
+                            
+                            <img class="img-rounded pull-left" src="https://source.unsplash.com/250x250" alt="product image description">
+                            <h3>Joe Doe</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rationis enim perfectio est virtus; De hominibus dici non necesse est.</p>
+                        </div>  
+
+                    </div>
+
+                   
+                       
+                </div>
+
             </main>
         </div>
     </div>
+  
+
+<!-- NEWSLETTER BLOCK -->
+
+    <div class="container-fluid newsletter">
+        <div class="text-center">
+            <h2>Register to our news letter!</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                <form>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control" type="text" placeholder="Name" required>         
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Age</label>                
+                        <input class="form-control" type="number" placeholder="Age" required>        
+                    </div>
+                        
+                    <div class="form-group">
+                        <label>Email address</label>                
+                        <input class="form-control" type="email" placeholder="Email Address">
+                    </div>
+
+                    <p><input type="checkbox" required> I agree to receive promotions from partners</p> 
+                    <button class="button btn-lg btn-white btn-block">Submit</button>
+                </form>
+                <p>Lorem ipsum dolor amet actually salvia quinoa lyft af locavore crucifix. Tumeric fixie kitsch bushwick, pitchfork adaptogen sriracha poke yr hexagon portland. Vaporware raclette photo booth kale chips unicorn hashtag chia glossier locavore subway tile austin tumblr everyday carry. Mustache yuccie stumptown hexagon. La croix raclette twee tattooed, brunch hammock meh small batch jean shorts scenester try-hard iPhone farm-to-table street art hoodie. Godard literally activated charcoal man bun iceland.</p>         
+                <p>Green juice jianbing sustainable snackwave, put a bird on it migas biodiesel wayfarers adaptogen irony. Disrupt hot chicken slow-carb, microdosing yr keffiyeh asymmetrical activated charcoal knausgaard. Tote bag green juice messenger bag, tumblr live-edge shoreditch before they sold out organic. You probably haven't heard of them try-hard sartorial poutine, next level sriracha pitchfork semiotics cloud bread tbh scenester pug fanny pack. Man braid marfa pop-up synth locavore sustainable, pabst edison bulb adaptogen literally. Literally lumbersexual quinoa taxidermy kogi stumptown.</p>         
+            
+                <p>Bespoke street art activated charcoal waistcoat, blue bottle forage mustache VHS kale chips meh keytar chartreuse drinking vinegar gastropub. Church-key leggings pickled readymade mumblecore XOXO gentrify gochujang tilde four dollar toast small batch art party. Man bun tote bag you probably haven't heard of them woke flannel post-ironic bushwick. Listicle leggings humblebrag shabby chic plaid narwhal. Woke cray vaporware meh. Meh biodiesel marfa, snackwave heirloom single-origin coffee vaporware health goth. Hammock squid gastropub four dollar toast jianbing vinyl meggings copper mug artisan fixie food truck.</p>         
+           
+                <p>Iceland raclette deep v poke franzen shoreditch kale chips butcher. Vegan schlitz whatever tumblr bitters raclette tilde offal asymmetrical sustainable activated charcoal before they sold out. Selfies tote bag brooklyn, bicycle rights letterpress cardigan sustainable gluten-free. Hammock echo park artisan actually gentrify. Narwhal listicle church-key kitsch, activated charcoal hot chicken XOXO yuccie.</p>
+
+                <p>Sartorial health goth cray, art party kogi man bun keffiyeh hella yuccie tbh vexillologist venmo. Wolf DIY poke, tumblr readymade blue bottle palo santo blog meditation butcher austin before they sold out wayfarers cliche. Kombucha unicorn typewriter af hammock normcore. Lomo seitan kogi bespoke brooklyn gastropub. Vape godard quinoa hell of, selfies tousled viral iceland banh mi direct trade XOXO kombucha hashtag irony ramps.</p>         
+        
+            </div>
+        </div>       
+    </div>
+
+
 
     <script src="content/js/vendors/jquery-3.2.1.min.js"></script>
     <script src="content/js/vendors/bootstrap.min.js"></script>
